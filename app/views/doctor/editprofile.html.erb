@@ -1,0 +1,58 @@
+<h1 style="text-align:center;color:white;background-color:red">Edit Your Details</h1>
+
+<div class="container">
+  <div class="row center">
+<%= form_for @patient do |f| %>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We will never share your email with anyone else.</div>
+  </div>
+ 
+  <div class="mb-3">
+    <label for="exampleInputName" class="form-label">Enter Patients Name</label>
+    <input type="string" class="form-control" id="exampleInputName" >
+    <div class="form-text"></div>
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputAge" class="form-label">Enter Patient Age</label>
+    <input type="string" class="form-control" id="exampleInputAge">
+    <div class="form-text"></div>
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputAddress" class="form-label">Enter Patient Address</label>
+    <input type="string" class="form-control" id="exampleInputAddress">
+    <div class="form-text"></div>
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputPhonenumber" class="form-label">Enter Patient Phone Number</label>
+    <input type="string" class="form-control" id="exampleInputPhonenumber">
+    <div class="form-text"></div>
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputDisease" class="form-label">Enter Patient Disease</label>
+    <input type="string" class="form-control" id="exampleInputDisease">
+    <div class="form-text"></div>
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputBloodgroup" class="form-label">Enter Patient Blood Group</label>
+    <input type="string" class="form-control" id="exampleInputBloodgroup">
+    <div class="form-text"></div>
+  </div>
+
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  
+<%end%>
+</div>
+</div>
+
+<button type="button " class="btn btn-primary btn-lg textalign-center">Submit</button>
+

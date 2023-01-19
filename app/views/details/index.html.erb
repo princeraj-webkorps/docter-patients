@@ -1,0 +1,43 @@
+<h1 style="text-align:center;color:white;background-color:red">Patients Record</h1>
+
+
+<table class="table ">
+  <thead>
+    <tr>
+      
+      <th scope="col">Serial Number</th>
+      <th scope="col">Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">Age</th>
+      <th scope="col">Phone Number</th>
+      <th scope="col">Disease</th>
+      <th scope="col">Blood Group</th>
+      <th scope="col">Applied Date And Time</th>
+      <th scope="col">Action</th>
+
+    </tr>
+  </thead>
+  <tbody>
+  <% @details.each do |detail| %>
+    <tr>
+      <td><%= detail.id %></td>
+      <td><%= detail.name %></td>
+      <td><%= detail.address %></td>
+      <td><%= detail.age %></td>
+      <td><%= detail.contact %></td>
+      <td><%= detail.disease %></td>
+      <td><%= detail.bloodgp %></td>
+      <td><%= detail.created_at %></td>
+      <td><%= link_to 'More info>>', detail_path(detail) %></td>
+
+    </tr>
+  <% end %>
+    
+  </tbody>
+</table>
+
+
+
+
+      
+     

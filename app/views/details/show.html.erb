@@ -1,0 +1,60 @@
+<h1 style="text-align:center;color:white;background-color:red">Patient Detail</h1>
+
+
+<div class="container">
+<div class="card" style="width: 80rem; height:45rem">
+  
+  <div class="card-body">
+    <h3 style="text-align:center">Webmedy Hospital Online Appointment</h3>
+     -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     <h5 style="text-align:center">Patient's Information</h5>
+     <h5 style="text-align:center">---------------------------------</h5>
+     Name:- <%= @detail.name %> <br>
+     Address:- <%= @detail.address %> <br>
+     Age:- <%= @detail.age %> <br>
+     Emaild Id :- <br>
+     Contact Number:- <%= @detail.contact %> <br>
+     Disease:- <%= @detail.disease %> <br>
+     Blood Group:- <%= @detail.bloodgp %> <br>
+     Applied Date:- <%= @detail.created_at %><br>
+     <br>
+     Appointment Date :- <%= @detail.appointmentdate %> <br>
+     Appointment Time :- 
+     
+    
+
+     <br>
+     <h5 style="text-align:center">Doctor's Information</h5>
+     <h5 style="text-align:center">---------------------------------</h5>
+     Doctor's Name:- <br>
+     Doctor's Address:- <br>
+     Doctor's Age:-  <br>
+     Doctor's Emaild Id :- <br>
+     Doctor's Contact Number:-  <br>
+     Specialized in :-  <br>
+     Experience :- <br>
+     
+     Experience_of_docter:- <br>
+
+     
+
+    
+     
+     
+     
+     -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     <br>
+     Applied Date:- <%= @detail.created_at %><br>
+
+  </div>
+</div>
+</div>
+
+<%= link_to "Edit Information",  edit_detail_path(@detail), class: "btn btn-warning" %>
+
+
+<%= link_to "Delete Information", @detail, data: { 'turbo-method': :delete, 'turbo-confirm': 'Are you sure?' } ,class: "btn btn-danger "%>
+            
+        
+
+

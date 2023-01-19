@@ -1,0 +1,16 @@
+current directory: /home/prince/Downloads/webmedy_app/vendor/ruby/3.0.0/gems/debug-1.6.3/ext/debug
+/home/prince/.rvm/rubies/ruby-3.0.0/bin/ruby -I /home/prince/.rvm/rubies/ruby-3.0.0/lib/ruby/site_ruby/3.0.0 extconf.rb
+creating Makefile
+
+current directory: /home/prince/Downloads/webmedy_app/vendor/ruby/3.0.0/gems/debug-1.6.3/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20221219-77622-bqs2lr sitelibdir\=./.gem.20221219-77622-bqs2lr clean
+
+current directory: /home/prince/Downloads/webmedy_app/vendor/ruby/3.0.0/gems/debug-1.6.3/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20221219-77622-bqs2lr sitelibdir\=./.gem.20221219-77622-bqs2lr
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/prince/Downloads/webmedy_app/vendor/ruby/3.0.0/gems/debug-1.6.3/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20221219-77622-bqs2lr sitelibdir\=./.gem.20221219-77622-bqs2lr install
+/usr/bin/install -m 0755 debug.so ./.gem.20221219-77622-bqs2lr/debug
